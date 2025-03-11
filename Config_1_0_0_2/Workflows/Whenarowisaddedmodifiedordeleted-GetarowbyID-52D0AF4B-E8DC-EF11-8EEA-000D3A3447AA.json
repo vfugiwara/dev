@@ -1,0 +1,118 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "ava_sharedcommondataserviceforapps_9a5b8"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "When_a_row_is_added,_modified_or_deleted": {
+          "metadata": {
+            "operationMetadataId": "24e13c18-ef4a-47b4-b5d9-e114d1981aab"
+          },
+          "type": "OpenApiConnectionWebhook",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "SubscribeWebhookTrigger",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "subscriptionRequest/message": 3,
+              "subscriptionRequest/entityname": "opportunity",
+              "subscriptionRequest/scope": 4,
+              "subscriptionRequest/filteringattributes": "statuscode"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      },
+      "actions": {
+        "Perform_an_unbound_action": {
+          "runAfter": {
+            "Initialize_variable_2": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "9098a0ac-151d-41e2-a776-83c141bc3ee2"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "PerformUnboundAction",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "actionName": "SendAppNotification",
+              "item/Title": "Opportunity has been updated.",
+              "item/Body": "Opportunity has been updated!",
+              "item/IconType": 100000000,
+              "item/Actions": "@variables('Action')",
+              "item/Recipient": "/systemusers(@{triggerOutputs()?['body/_ownerid_value']})"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Initialize_variable_2": {
+          "runAfter": {
+            "Initialize_variable": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "d93b1ce8-7d32-4e6f-9393-2a1f8e1c7c04"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "Action",
+                "type": "string",
+                "value": "        \"@odata.type\": \"Microsoft.Dynamics.CRM.expando\",\n        \"actions@odata.type\": \"#Collection(Microsoft.Dynamics.CRM.expando)\",\n        \"actions\": [\n            {\n                \"title\": \"View cases\",\n                \"data\": {\n                    \"@odata.type\": \"#Microsoft.Dynamics.CRM.expando\",\n                    \"type\": \"url\",\n                    \"url\": \"https://www.google.com\",\n                    \"navigationTarget\": \"newWindow\"\n                }\n            }\n        ]"
+              }
+            ]
+          }
+        },
+        "Initialize_variable": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "94139a9e-a437-42be-abeb-a427eb616fa8"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "URL",
+                "type": "string",
+                "value": "https://org0929a62c.crm.dynamics.com/main.aspx?etn=opportunity&pagetype=entityrecord&id=@{triggerOutputs()?['body/opportunityid']}"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "templateName": ""
+  },
+  "schemaVersion": "1.0.0.0"
+}
