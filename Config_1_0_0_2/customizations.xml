@@ -891,27 +891,6 @@
       </RibbonDiffXml>
     </Entity>
     <Entity>
-      <Name LocalizedName="Opportunity Sales Process" OriginalName="Opportunity Sales Process">OpportunitySalesProcess</Name>
-      <EntityInfo>
-        <entity Name="OpportunitySalesProcess" unmodified="1">
-          <attributes />
-        </entity>
-      </EntityInfo>
-      <RibbonDiffXml>
-        <CustomActions />
-        <Templates>
-          <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
-        </Templates>
-        <CommandDefinitions />
-        <RuleDefinitions>
-          <TabDisplayRules />
-          <DisplayRules />
-          <EnableRules />
-        </RuleDefinitions>
-        <LocLabels />
-      </RibbonDiffXml>
-    </Entity>
-    <Entity>
       <Name LocalizedName="Process Session" OriginalName="">ProcessSession</Name>
       <EntityInfo>
         <entity Name="ProcessSession">
@@ -1035,7 +1014,6 @@
         <LocalizedName languagecode="1033" description="When a row is added, modified or deleted -&gt; Get a row by ID" />
       </LocalizedNames>
     </Workflow>
-    <Workflow WorkflowId="{3e8ebee6-a2bc-4451-9c5f-b146b085413a}" Name="Sales Process" Description="This is the default process flow for working on an opportunity." unmodified="1" />
   </Workflows>
   <FieldSecurityProfiles></FieldSecurityProfiles>
   <Templates />

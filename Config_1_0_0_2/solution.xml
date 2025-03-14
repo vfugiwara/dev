@@ -5,7 +5,7 @@
       <LocalizedName description="Config" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.0.2</Version>
+    <Version>1.0.0.3</Version>
     <Managed>0</Managed>
     <Publisher>
       <UniqueName>Avanade</UniqueName>
@@ -80,10 +80,8 @@
       <RootComponent type="1" schemaName="account" behavior="1" />
       <RootComponent type="1" schemaName="asyncoperation" behavior="2" />
       <RootComponent type="1" schemaName="opportunity" behavior="2" />
-      <RootComponent type="1" schemaName="opportunitysalesprocess" behavior="0" />
       <RootComponent type="1" schemaName="processsession" behavior="2" />
       <RootComponent type="1" schemaName="syncerror" behavior="2" />
-      <RootComponent type="29" id="{3e8ebee6-a2bc-4451-9c5f-b146b085413a}" behavior="0" />
       <RootComponent type="29" id="{52d0af4b-e8dc-ef11-8eea-000d3a3447aa}" behavior="0" />
       <RootComponent type="62" behavior="0" />
       <RootComponent type="62" schemaName="SalesHubSitemap" behavior="0" />
@@ -399,13 +397,6 @@
           <package appName="msdynce_Sales" version="9.0.24102.10001">msdynce_SalesAnchor (9.0.24102.10001)</package>
           <package appName="Dynamics 365 Core Sales" version="9.0.24114.10004">msdynce_SalesAnchor (9.0.24114.10004)</package>
         </Required>
-        <Dependent type="1" schemaName="opportunitysalesprocess" displayName="Opportunity Sales Process" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="opportunitysalesprocess" displayName="Opportunity Sales Process" solution="msdynce_Sales (9.0.4.0076)">
-          <package appName="msdynce_Sales" version="9.0.24102.10001">msdynce_SalesAnchor (9.0.24102.10001)</package>
-          <package appName="Dynamics 365 Core Sales" version="9.0.24114.10004">msdynce_SalesAnchor (9.0.24114.10004)</package>
-        </Required>
         <Dependent type="300" schemaName="ava_saleshubdefaultcommandlibrary_91d08" displayName="saleshub_DefaultCommandLibrary" />
       </MissingDependency>
       <MissingDependency>
@@ -610,13 +601,6 @@
           <package appName="Dynamics 365 Core Service" version="9.0.24114.1003">msdynce_ServiceAnchor (9.0.24114.1003)</package>
         </Required>
         <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="29" displayName="Sales Process" solution="msdynce_Sales (9.0.4.0076)" id="{3e8ebee6-a2bc-4451-9c5f-b146b085413a}">
-          <package appName="msdynce_Sales" version="9.0.24102.10001">msdynce_SalesAnchor (9.0.24102.10001)</package>
-          <package appName="Dynamics 365 Core Sales" version="9.0.24114.10004">msdynce_SalesAnchor (9.0.24114.10004)</package>
-        </Required>
-        <Dependent type="29" displayName="Sales Process" id="{3e8ebee6-a2bc-4451-9c5f-b146b085413a}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="29" displayName="Sales Process" solution="msdynce_Sales (9.0.4.0076)" id="{3e8ebee6-a2bc-4451-9c5f-b146b085413a}">
