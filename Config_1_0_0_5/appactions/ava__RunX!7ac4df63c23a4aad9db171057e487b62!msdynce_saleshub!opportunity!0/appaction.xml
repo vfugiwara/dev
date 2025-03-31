@@ -1,0 +1,36 @@
+<appaction uniquename="ava__RunX!7ac4df63c23a4aad9db171057e487b62!msdynce_saleshub!opportunity!0">
+  <appmoduleid>
+    <uniquename>msdynce_saleshub</uniquename>
+  </appmoduleid>
+  <buttonlabeltext default="Run X">
+    <label description="Run X" languagecode="1033" />
+  </buttonlabeltext>
+  <context>1</context>
+  <contextentity>
+    <logicalname>opportunity</logicalname>
+  </contextentity>
+  <contextvalue>opportunity</contextvalue>
+  <hidden>0</hidden>
+  <iscustomizable>1</iscustomizable>
+  <isdisabled>0</isdisabled>
+  <isgrouptitlehidden>0</isgrouptitlehidden>
+  <location>0</location>
+  <name>RunX!7ac4df63c23a4aad9db171057e487b62</name>
+  <onclickeventformulacomponentlibraryid>
+    <name>ava_saleshubdefaultcommandlibrary_91d08</name>
+  </onclickeventformulacomponentlibraryid>
+  <onclickeventformulacomponentname>73e92ad83bf44402af48bb32632a58b2</onclickeventformulacomponentname>
+  <onclickeventformulafunctionname>OnSelect</onclickeventformulafunctionname>
+  <onclickeventtype>1</onclickeventtype>
+  <origin>0</origin>
+  <sequence>100100005.5000000000</sequence>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <type>0</type>
+  <visibilityformulacomponentlibraryid>
+    <name>ava_saleshubdefaultcommandlibrary_91d08</name>
+  </visibilityformulacomponentlibraryid>
+  <visibilityformulacomponentname>73e92ad83bf44402af48bb32632a58b2</visibilityformulacomponentname>
+  <visibilityformulafunctionname>Visible</visibilityformulafunctionname>
+  <visibilitytype>1</visibilitytype>
+</appaction>
