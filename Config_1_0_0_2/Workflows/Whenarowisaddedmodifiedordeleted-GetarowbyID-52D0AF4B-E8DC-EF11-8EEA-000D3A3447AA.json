@@ -1,10 +1,10 @@
 {
   "properties": {
     "connectionReferences": {
-      "shared_commondataserviceforapps": {
+      "shared_commondataserviceforapps_1": {
         "runtimeSource": "embedded",
         "connection": {
-          "connectionReferenceLogicalName": "ava_sharedcommondataserviceforapps_9a5b8"
+          "connectionReferenceLogicalName": "ava_sharedcommondataserviceforapps_40224"
         },
         "api": {
           "name": "shared_commondataserviceforapps"
@@ -32,7 +32,7 @@
           "type": "OpenApiConnectionWebhook",
           "inputs": {
             "host": {
-              "connectionName": "shared_commondataserviceforapps",
+              "connectionName": "shared_commondataserviceforapps_1",
               "operationId": "SubscribeWebhookTrigger",
               "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
             },
@@ -49,7 +49,7 @@
       "actions": {
         "Perform_an_unbound_action": {
           "runAfter": {
-            "Initialize_variable_2": [
+            "Perform_an_unbound_action_2": [
               "Succeeded"
             ]
           },
@@ -59,7 +59,7 @@
           "type": "OpenApiConnection",
           "inputs": {
             "host": {
-              "connectionName": "shared_commondataserviceforapps",
+              "connectionName": "shared_commondataserviceforapps_1",
               "operationId": "PerformUnboundAction",
               "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
             },
@@ -108,6 +108,29 @@
                 "value": "https://org0929a62c.crm.dynamics.com/main.aspx?etn=opportunity&pagetype=entityrecord&id=@{triggerOutputs()?['body/opportunityid']}"
               }
             ]
+          }
+        },
+        "Perform_an_unbound_action_2": {
+          "runAfter": {
+            "Initialize_variable_2": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "fc49e32a-67d3-48ea-b30c-17b06125c58c"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps_1",
+              "operationId": "PerformUnboundAction",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "actionName": "RetrieveEnvironmentVariableSecretValue",
+              "item/EnvironmentVariableName": "ava_Secret"
+            },
+            "authentication": "@parameters('$authentication')"
           }
         }
       }

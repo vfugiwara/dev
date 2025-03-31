@@ -1,11 +1,11 @@
-<ImportExportXml version="9.2.25021.206" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25021.206" OrganizationSchemaType="Full" CRMServerServiceabilityVersion="9.2.25021.00206">
+<ImportExportXml version="9.2.25024.216" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25024.216" OrganizationSchemaType="Full" CRMServerServiceabilityVersion="9.2.25024.00216">
   <SolutionManifest>
     <UniqueName>Config</UniqueName>
     <LocalizedNames>
       <LocalizedName description="Config" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.0.3</Version>
+    <Version>1.0.0.5</Version>
     <Managed>0</Managed>
     <Publisher>
       <UniqueName>Avanade</UniqueName>
@@ -246,14 +246,14 @@
         <Dependent type="62" schemaName="SalesHubSitemap" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_datahygienesettinginfo" displayName="Data Hygiene Setting Info" solution="msdyn_leadhygiene (9.1.2501.4001)">
+        <Required type="1" schemaName="msdyn_datahygienesettinginfo" displayName="Data Hygiene Setting Info" solution="msdyn_leadhygiene (9.1.2502.4001)">
           <package appName="msdyn_AcceleratedSales" version="9.1.24111.10004">msdyn_AcceleratedSalesAnchor (9.1.24111.10004)</package>
           <package appName="Dynamics 365 Accelerated Sales" version="9.1.24114.10003">msdyn_AcceleratedSalesAnchor (9.1.24114.10003)</package>
         </Required>
         <Dependent type="62" schemaName="SalesHubSitemap" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_extendedusersetting" displayName="Extended User Setting" solution="msdyn_acceleratedsales (9.1.25014.10001)">
+        <Required type="1" schemaName="msdyn_extendedusersetting" displayName="Extended User Setting" solution="msdyn_acceleratedsales (9.1.25024.10001)">
           <package appName="msdyn_AcceleratedSales" version="9.1.24111.10004">msdyn_AcceleratedSalesAnchor (9.1.24111.10004)</package>
           <package appName="Dynamics 365 Accelerated Sales" version="9.1.24114.10003">msdyn_AcceleratedSalesAnchor (9.1.24114.10003)</package>
         </Required>
@@ -267,7 +267,7 @@
         <Dependent type="62" schemaName="SalesHubSitemap" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_leadhygienesetting" displayName="Lead Hygiene Setting" solution="msdyn_leadhygiene (9.1.2501.4001)">
+        <Required type="1" schemaName="msdyn_leadhygienesetting" displayName="Lead Hygiene Setting" solution="msdyn_leadhygiene (9.1.2502.4001)">
           <package appName="msdyn_AcceleratedSales" version="9.1.24111.10004">msdyn_AcceleratedSalesAnchor (9.1.24111.10004)</package>
           <package appName="Dynamics 365 Accelerated Sales" version="9.1.24114.10003">msdyn_AcceleratedSalesAnchor (9.1.24114.10003)</package>
         </Required>
@@ -316,14 +316,14 @@
         <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_salescopilotorgsettings" displayName="Org level settings for Sales Copilot apps" solution="msdyn_SalesCopilot (9.1.25012.10002)">
+        <Required type="1" schemaName="msdyn_salescopilotorgsettings" displayName="Org level settings for Sales Copilot apps" solution="msdyn_SalesCopilot (9.1.25024.10006)">
           <package appName="msdynce_Sales" version="9.0.24102.10001">msdynce_SalesAnchor (9.0.24102.10001)</package>
           <package appName="Dynamics 365 Core Sales" version="9.0.24114.10004">msdynce_SalesAnchor (9.0.24114.10004)</package>
         </Required>
         <Dependent type="62" schemaName="SalesHubSitemap" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="msdyn_salesocsmstemplate" displayName="Text message template" solution="msdyn_SalesOmniChannel (9.1.25014.10001)">
+        <Required type="1" schemaName="msdyn_salesocsmstemplate" displayName="Text message template" solution="msdyn_SalesOmniChannel (9.1.25024.10001)">
           <package appName="msdyn_AcceleratedSales" version="9.1.24111.10004">msdyn_AcceleratedSalesAnchor (9.1.24111.10004)</package>
           <package appName="Dynamics 365 Accelerated Sales" version="9.1.24114.10003">msdyn_AcceleratedSalesAnchor (9.1.24114.10003)</package>
         </Required>
@@ -575,21 +575,21 @@
         <Dependent type="2" schemaName="statuscode" displayName="Status Reason" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="26" schemaName="All text messages" displayName="All text messages" parentSchemaName="msdyn_ocliveworkitem" parentDisplayName="Conversation" solution="msdyn_SalesOmniChannel (9.1.25014.10001)" id="{a6960a25-1a4a-ed11-bba2-000d3a98dd1f}">
+        <Required type="26" schemaName="All text messages" displayName="All text messages" parentSchemaName="msdyn_ocliveworkitem" parentDisplayName="Conversation" solution="msdyn_SalesOmniChannel (9.1.25024.10001)" id="{a6960a25-1a4a-ed11-bba2-000d3a98dd1f}">
           <package appName="msdyn_AcceleratedSales" version="9.1.24111.10004">msdyn_AcceleratedSalesAnchor (9.1.24111.10004)</package>
           <package appName="Dynamics 365 Accelerated Sales" version="9.1.24114.10003">msdyn_AcceleratedSalesAnchor (9.1.24114.10003)</package>
         </Required>
         <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="26" schemaName="My text messages" displayName="My text messages" parentSchemaName="msdyn_ocliveworkitem" parentDisplayName="Conversation" solution="msdyn_SalesOmniChannel (9.1.25014.10001)" id="{b7a71b36-1a4a-fe22-bba2-111d3a98dd1f}">
+        <Required type="26" schemaName="My text messages" displayName="My text messages" parentSchemaName="msdyn_ocliveworkitem" parentDisplayName="Conversation" solution="msdyn_SalesOmniChannel (9.1.25024.10001)" id="{b7a71b36-1a4a-fe22-bba2-111d3a98dd1f}">
           <package appName="msdyn_AcceleratedSales" version="9.1.24111.10004">msdyn_AcceleratedSalesAnchor (9.1.24111.10004)</package>
           <package appName="Dynamics 365 Accelerated Sales" version="9.1.24114.10003">msdyn_AcceleratedSalesAnchor (9.1.24114.10003)</package>
         </Required>
         <Dependent type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="26" schemaName="My unread text messages" displayName="My unread text messages" parentSchemaName="msdyn_ocliveworkitem" parentDisplayName="Conversation" solution="msdyn_SalesOmniChannel (9.1.25014.10001)" id="{c8b82c47-9a9a-22fe-2abb-d1114b09aa2c}">
+        <Required type="26" schemaName="My unread text messages" displayName="My unread text messages" parentSchemaName="msdyn_ocliveworkitem" parentDisplayName="Conversation" solution="msdyn_SalesOmniChannel (9.1.25024.10001)" id="{c8b82c47-9a9a-22fe-2abb-d1114b09aa2c}">
           <package appName="msdyn_AcceleratedSales" version="9.1.24111.10004">msdyn_AcceleratedSalesAnchor (9.1.24111.10004)</package>
           <package appName="Dynamics 365 Accelerated Sales" version="9.1.24114.10003">msdyn_AcceleratedSalesAnchor (9.1.24114.10003)</package>
         </Required>
@@ -684,7 +684,7 @@
         <Dependent type="60" displayName="Information" parentDisplayName="Account" id="{b053a39a-041a-4356-acef-ddf00182762b}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="61" schemaName="msdyn_Dynamics_icons_Sales" displayName="msdyn_Dynamics_icons_Sales" solution="msdyn_SalesApp (9.0.25014.10001)">
+        <Required type="61" schemaName="msdyn_Dynamics_icons_Sales" displayName="msdyn_Dynamics_icons_Sales" solution="msdyn_SalesApp (9.0.25024.10001)">
           <package appName="msdynce_SalesInsights" version="9.0.24102.10004">msdynce_SalesInsightsAnchor (9.0.24102.10004)</package>
           <package appName="SalesApp" version="9.0.23081.10004">msdyn_SalesAppDashboards (9.0.23081.10004)</package>
           <package appName="Dynamics Sales Embedded Package" version="9.0.24114.10008">msdynce_SalesInsightsAnchor (9.0.24114.10008)</package>
@@ -755,56 +755,56 @@
         <Dependent type="62" schemaName="SalesHubSitemap" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="61" schemaName="Sales/_imgs/saleAdminSetting/GsAnalyticsIcon.svg" displayName="Sales/_imgs/saleAdminSetting/GsAnalyticsIcon.svg" solution="msdynce_SalesPatch202001 (9.0.25012.10003)">
+        <Required type="61" schemaName="Sales/_imgs/saleAdminSetting/GsAnalyticsIcon.svg" displayName="Sales/_imgs/saleAdminSetting/GsAnalyticsIcon.svg" solution="msdynce_SalesPatch202001 (9.0.25024.10006)">
           <package appName="msdynce_Sales" version="9.0.24102.10001">msdynce_SalesAnchor (9.0.24102.10001)</package>
           <package appName="Dynamics 365 Core Sales" version="9.0.24114.10004">msdynce_SalesAnchor (9.0.24114.10004)</package>
         </Required>
         <Dependent type="62" schemaName="SalesHubSitemap" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="61" schemaName="Sales/_imgs/saleAdminSetting/GsChatCollabIcon.svg" displayName="Sales/_imgs/saleAdminSetting/GsChatCollabIcon.svg" solution="msdynce_SalesPatch202001 (9.0.25012.10003)">
+        <Required type="61" schemaName="Sales/_imgs/saleAdminSetting/GsChatCollabIcon.svg" displayName="Sales/_imgs/saleAdminSetting/GsChatCollabIcon.svg" solution="msdynce_SalesPatch202001 (9.0.25024.10006)">
           <package appName="msdynce_Sales" version="9.0.24102.10001">msdynce_SalesAnchor (9.0.24102.10001)</package>
           <package appName="Dynamics 365 Core Sales" version="9.0.24114.10004">msdynce_SalesAnchor (9.0.24114.10004)</package>
         </Required>
         <Dependent type="62" schemaName="SalesHubSitemap" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="61" schemaName="Sales/_imgs/saleAdminSetting/GsLinkedInIcon.svg" displayName="Sales/_imgs/saleAdminSetting/GsLinkedInIcon.svg" solution="msdynce_SalesPatch202001 (9.0.25012.10003)">
+        <Required type="61" schemaName="Sales/_imgs/saleAdminSetting/GsLinkedInIcon.svg" displayName="Sales/_imgs/saleAdminSetting/GsLinkedInIcon.svg" solution="msdynce_SalesPatch202001 (9.0.25024.10006)">
           <package appName="msdynce_Sales" version="9.0.24102.10001">msdynce_SalesAnchor (9.0.24102.10001)</package>
           <package appName="Dynamics 365 Core Sales" version="9.0.24114.10004">msdynce_SalesAnchor (9.0.24114.10004)</package>
         </Required>
         <Dependent type="62" schemaName="SalesHubSitemap" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="61" schemaName="Sales/_imgs/saleAdminSetting/GsLnOIcon.svg" displayName="Sales/_imgs/saleAdminSetting/GsLnOIcon.svg" solution="msdynce_SalesPatch202001 (9.0.25012.10003)">
+        <Required type="61" schemaName="Sales/_imgs/saleAdminSetting/GsLnOIcon.svg" displayName="Sales/_imgs/saleAdminSetting/GsLnOIcon.svg" solution="msdynce_SalesPatch202001 (9.0.25024.10006)">
           <package appName="msdynce_Sales" version="9.0.24102.10001">msdynce_SalesAnchor (9.0.24102.10001)</package>
           <package appName="Dynamics 365 Core Sales" version="9.0.24114.10004">msdynce_SalesAnchor (9.0.24114.10004)</package>
         </Required>
         <Dependent type="62" schemaName="SalesHubSitemap" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="61" schemaName="Sales/_imgs/saleAdminSetting/GsOverviewIcon.svg" displayName="Sales/_imgs/saleAdminSetting/GsOverviewIcon.svg" solution="msdynce_SalesPatch202001 (9.0.25012.10003)">
+        <Required type="61" schemaName="Sales/_imgs/saleAdminSetting/GsOverviewIcon.svg" displayName="Sales/_imgs/saleAdminSetting/GsOverviewIcon.svg" solution="msdynce_SalesPatch202001 (9.0.25024.10006)">
           <package appName="msdynce_Sales" version="9.0.24102.10001">msdynce_SalesAnchor (9.0.24102.10001)</package>
           <package appName="Dynamics 365 Core Sales" version="9.0.24114.10004">msdynce_SalesAnchor (9.0.24114.10004)</package>
         </Required>
         <Dependent type="62" schemaName="SalesHubSitemap" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="61" schemaName="Sales/_imgs/saleAdminSetting/GsProductivityToolsIcon.svg" displayName="Sales/_imgs/saleAdminSetting/GsProductivityToolsIcon.svg" solution="msdynce_SalesPatch202001 (9.0.25012.10003)">
+        <Required type="61" schemaName="Sales/_imgs/saleAdminSetting/GsProductivityToolsIcon.svg" displayName="Sales/_imgs/saleAdminSetting/GsProductivityToolsIcon.svg" solution="msdynce_SalesPatch202001 (9.0.25024.10006)">
           <package appName="msdynce_Sales" version="9.0.24102.10001">msdynce_SalesAnchor (9.0.24102.10001)</package>
           <package appName="Dynamics 365 Core Sales" version="9.0.24114.10004">msdynce_SalesAnchor (9.0.24114.10004)</package>
         </Required>
         <Dependent type="62" schemaName="SalesHubSitemap" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="61" schemaName="Sales/_imgs/saleAdminSetting/GsTeamsCallsIcon.svg" displayName="Sales/_imgs/saleAdminSetting/GsTeamsCallsIcon.svg" solution="msdynce_SalesPatch202001 (9.0.25012.10003)">
+        <Required type="61" schemaName="Sales/_imgs/saleAdminSetting/GsTeamsCallsIcon.svg" displayName="Sales/_imgs/saleAdminSetting/GsTeamsCallsIcon.svg" solution="msdynce_SalesPatch202001 (9.0.25024.10006)">
           <package appName="msdynce_Sales" version="9.0.24102.10001">msdynce_SalesAnchor (9.0.24102.10001)</package>
           <package appName="Dynamics 365 Core Sales" version="9.0.24114.10004">msdynce_SalesAnchor (9.0.24114.10004)</package>
         </Required>
         <Dependent type="62" schemaName="SalesHubSitemap" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="61" schemaName="Sales/_imgs/saleAdminSetting/InsightIcon.svg" displayName="Sales/_imgs/saleAdminSetting/InsightIcon.svg" solution="msdynce_SalesPatch202001 (9.0.25012.10003)">
+        <Required type="61" schemaName="Sales/_imgs/saleAdminSetting/InsightIcon.svg" displayName="Sales/_imgs/saleAdminSetting/InsightIcon.svg" solution="msdynce_SalesPatch202001 (9.0.25024.10006)">
           <package appName="msdynce_Sales" version="9.0.24102.10001">msdynce_SalesAnchor (9.0.24102.10001)</package>
           <package appName="Dynamics 365 Core Sales" version="9.0.24114.10004">msdynce_SalesAnchor (9.0.24114.10004)</package>
         </Required>
@@ -818,7 +818,7 @@
         <Dependent type="62" schemaName="SalesHubSitemap" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="61" schemaName="Sales/_imgs/SiteMap/OpportunityPipelineView.svg" displayName="Sales/_imgs/SiteMap/OpportunityPipelineView.svg" solution="msdyn_SalesApp (9.0.25014.10001)">
+        <Required type="61" schemaName="Sales/_imgs/SiteMap/OpportunityPipelineView.svg" displayName="Sales/_imgs/SiteMap/OpportunityPipelineView.svg" solution="msdyn_SalesApp (9.0.25024.10001)">
           <package appName="msdynce_SalesInsights" version="9.0.24102.10004">msdynce_SalesInsightsAnchor (9.0.24102.10004)</package>
           <package appName="SalesApp" version="9.0.23081.10004">msdyn_SalesAppDashboards (9.0.23081.10004)</package>
           <package appName="Dynamics Sales Embedded Package" version="9.0.24114.10008">msdynce_SalesInsightsAnchor (9.0.24114.10008)</package>
@@ -826,7 +826,7 @@
         <Dependent type="62" schemaName="SalesHubSitemap" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="61" schemaName="Sales/_imgs/SiteMap/OrgChartIcon.svg" displayName="Sales/_imgs/SiteMap/OrgChartIcon.svg" solution="msdyn_SalesApp (9.0.25014.10001)">
+        <Required type="61" schemaName="Sales/_imgs/SiteMap/OrgChartIcon.svg" displayName="Sales/_imgs/SiteMap/OrgChartIcon.svg" solution="msdyn_SalesApp (9.0.25024.10001)">
           <package appName="msdynce_SalesInsights" version="9.0.24102.10004">msdynce_SalesInsightsAnchor (9.0.24102.10004)</package>
           <package appName="SalesApp" version="9.0.23081.10004">msdyn_SalesAppDashboards (9.0.23081.10004)</package>
           <package appName="Dynamics Sales Embedded Package" version="9.0.24114.10008">msdynce_SalesInsightsAnchor (9.0.24114.10008)</package>
@@ -834,7 +834,7 @@
         <Dependent type="62" schemaName="SalesHubSitemap" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="61" schemaName="Sales/_imgs/SiteMap/SalesCopilotIconBlack.svg" displayName="Sales/_imgs/SiteMap/SalesCopilotIconBlack.svg" solution="msdyn_SalesApp (9.0.25014.10001)">
+        <Required type="61" schemaName="Sales/_imgs/SiteMap/SalesCopilotIconBlack.svg" displayName="Sales/_imgs/SiteMap/SalesCopilotIconBlack.svg" solution="msdyn_SalesApp (9.0.25024.10001)">
           <package appName="msdynce_SalesInsights" version="9.0.24102.10004">msdynce_SalesInsightsAnchor (9.0.24102.10004)</package>
           <package appName="SalesApp" version="9.0.23081.10004">msdyn_SalesAppDashboards (9.0.23081.10004)</package>
           <package appName="Dynamics Sales Embedded Package" version="9.0.24114.10008">msdynce_SalesInsightsAnchor (9.0.24114.10008)</package>
@@ -842,7 +842,7 @@
         <Dependent type="62" schemaName="SalesHubSitemap" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="62" schemaName="SalesHubSitemap" solution="msdyn_SalesApp (9.0.25014.10001)">
+        <Required type="62" schemaName="SalesHubSitemap" solution="msdyn_SalesApp (9.0.25024.10001)">
           <package appName="msdynce_SalesInsights" version="9.0.24102.10004">msdynce_SalesInsightsAnchor (9.0.24102.10004)</package>
           <package appName="SalesApp" version="9.0.23081.10004">msdyn_SalesAppDashboards (9.0.23081.10004)</package>
           <package appName="Dynamics Sales Embedded Package" version="9.0.24114.10008">msdynce_SalesInsightsAnchor (9.0.24114.10008)</package>
@@ -850,7 +850,7 @@
         <Dependent type="62" schemaName="SalesHubSitemap" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" solution="msdyn_SalesApp (9.0.25014.10001)">
+        <Required type="80" schemaName="msdynce_saleshub" displayName="Sales Hub" solution="msdyn_SalesApp (9.0.25024.10001)">
           <package appName="msdynce_SalesInsights" version="9.0.24102.10004">msdynce_SalesInsightsAnchor (9.0.24102.10004)</package>
           <package appName="SalesApp" version="9.0.23081.10004">msdyn_SalesAppDashboards (9.0.23081.10004)</package>
           <package appName="Dynamics Sales Embedded Package" version="9.0.24114.10008">msdynce_SalesInsightsAnchor (9.0.24114.10008)</package>
@@ -864,14 +864,14 @@
         <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=msdynce_saleshub,settingdefinitionid.uniquename=AllowNotificationsEarlyAccess" id.parentappmoduleid.uniquename="msdynce_saleshub" id.settingdefinitionid.uniquename="AllowNotificationsEarlyAccess" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="SettingDefinition" displayName="msdyn_enablertecopilot" solution="msdyn_SalesCopilot (9.1.25012.10002)" id.uniquename="msdyn_enablertecopilot">
+        <Required type="SettingDefinition" displayName="msdyn_enablertecopilot" solution="msdyn_SalesCopilot (9.1.25024.10006)" id.uniquename="msdyn_enablertecopilot">
           <package appName="msdynce_Sales" version="9.0.24102.10001">msdynce_SalesAnchor (9.0.24102.10001)</package>
           <package appName="Dynamics 365 Core Sales" version="9.0.24114.10004">msdynce_SalesAnchor (9.0.24114.10004)</package>
         </Required>
         <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=msdynce_saleshub,settingdefinitionid.uniquename=msdyn_enablertecopilot" id.parentappmoduleid.uniquename="msdynce_saleshub" id.settingdefinitionid.uniquename="msdyn_enablertecopilot" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="SettingDefinition" displayName="msdyn_rtecopilotdefaultonruncompleted" solution="msdyn_CSIntelligence (9.2.25021.1036)" id.uniquename="msdyn_rtecopilotdefaultonruncompleted">
+        <Required type="SettingDefinition" displayName="msdyn_rtecopilotdefaultonruncompleted" solution="msdyn_CSIntelligence (9.2.25023.1024)" id.uniquename="msdyn_rtecopilotdefaultonruncompleted">
           <package appName="Service Intelligence Package" version="9.2.24112.1035">msdyn_ServiceIntelligenceAnchor (9.2.24112.1035)</package>
           <package appName="Dynamics 365 Customer Service Intelligence" version="9.2.24114.1034">msdyn_ServiceIntelligenceAnchor (9.2.24114.1034)</package>
         </Required>
